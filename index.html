@@ -3,176 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHIRALIYA Children Care & Inclusion Foundation</title>
-<meta name="description" content="CHIRALIYA Children Care & Inclusion Foundation supports vulnerable children, women and persons with disabilities through education, inclusion, wellbeing and empowerment in Nigeria.">
+<title>Chiraliya Children Care and Inclusion Foundation</title>
+
 <style>
-:root{--green:#176b4d;--gold:#d8a83e;--cream:#fffaf1;--dark:#16352b;--light:#f4f7f5;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#25352f;line-height:1.65;background:var(--white)}
-a{text-decoration:none;color:inherit}.top{background:var(--dark);color:#fff;padding:9px 6%;font-size:14px;text-align:right}
-nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 12px #00000012;padding:15px 6%;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;color:var(--green);font-size:18px}.logo span{display:block;color:#8a6a1e;font-size:11px;letter-spacing:1px}
-.links{display:flex;gap:22px;align-items:center}.links a{font-weight:600;font-size:14px}.btn{background:var(--gold);color:#1f2d25;padding:11px 18px;border-radius:7px;font-weight:800;border:0;cursor:pointer}
-.hero{background:linear-gradient(115deg,#eaf5ef,#fffaf1);padding:90px 6%;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
-.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.05;color:var(--dark);margin:0 0 22px}.hero p{font-size:19px;max-width:650px}
-.badge{display:inline-block;background:#dcefe6;color:var(--green);padding:7px 13px;border-radius:30px;font-weight:800;font-size:13px;margin-bottom:18px}
-.hero-card{background:var(--green);color:#fff;padding:38px;border-radius:22px;box-shadow:0 18px 40px #176b4d2b}.hero-card h3{font-size:27px;margin-top:0}.hero-card strong{color:#f3d27c}
-section{padding:78px 6%}.soft{background:var(--light)}.cream{background:var(--cream)}
-.wrap{max-width:1150px;margin:auto}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:13px}
-h2{font-size:38px;line-height:1.15;color:var(--dark);margin:10px 0 18px}.lead{font-size:18px;max-width:800px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}.card{background:#fff;padding:28px;border-radius:16px;border:1px solid #e6ece8}.card h3{color:var(--green);margin-top:0}.icon{font-size:30px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}.stat{padding:25px;background:#fff;border-radius:14px;text-align:center}.stat b{font-size:34px;color:var(--green);display:block}
-.cta{background:var(--green);color:#fff;text-align:center;padding:65px 6%}.cta h2{color:#fff}.cta .btn{margin:8px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-box{padding:28px;background:var(--light);border-radius:15px}
-footer{background:var(--dark);color:#fff;padding:45px 6%}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer-grid h3{color:#f3d27c}
-.small{font-size:13px;opacity:.8}.pill{display:inline-block;padding:6px 10px;background:#eaf5ef;color:var(--green);border-radius:20px;margin:4px;font-size:13px}
-form input,form textarea{width:100%;padding:13px;margin:7px 0 12px;border:1px solid #ccd8d1;border-radius:7px;font:inherit}form textarea{min-height:130px}
-.mobile{display:none}
-@media(max-width:800px){.links{display:none}.mobile{display:block}.hero,.contact,.footer-grid{grid-template-columns:1fr}.grid,.stats{grid-template-columns:1fr}.hero{padding:65px 6%}section{padding:58px 6%}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8faf9;
+}
+
+header {
+  background: #0b6b4f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 15px;
+}
+
+nav {
+  background: #07543e;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  background: #f4b942;
+  color: #222;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #0b6b4f;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #0b6b4f;
+  margin-bottom: 10px;
+}
+
+.mission {
+  background: #e9f5f0;
+  max-width: none;
+}
+
+.mission-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact {
+  background: #0b6b4f;
+  color: white;
+  max-width: none;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+}
+
+footer {
+  background: #053b2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
 </style>
 </head>
+
 <body>
-<div class="top">Maiduguri, Borno State, Nigeria · Every Child Deserves a Chance</div>
+
+<header>
+  <h1>Chiraliya Children Care and Inclusion Foundation</h1>
+  <p>Creating Hope • Supporting Children • Building Inclusive Communities</p>
+</header>
+
 <nav>
-  <a class="logo" href="#home">CHIRALIYA <span>Children Care & Inclusion Foundation</span></a>
-  <div class="links">
-    <a href="#about">About</a><a href="#programmes">Programmes</a><a href="#donate">Donate</a><a href="#partnership">Partnership</a><a href="#contact">Contact</a>
-  </div>
-  <a class="btn mobile" href="#donate">Support Us</a>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#mission">Mission</a>
+  <a href="#work">What We Do</a>
+  <a href="#vision">Vision</a>
+  <a href="#involved">Get Involved</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<main id="home">
-<section class="hero">
-<div>
-  <span class="badge">CHILDREN · INCLUSION · EMPOWERMENT</span>
-  <h1>Every Child Deserves a Chance.</h1>
-  <p>CHIRALIYA Children Care & Inclusion Foundation is a Nigerian community-focused organisation working to support orphans, vulnerable children, women and persons with disabilities through education, social inclusion, wellbeing, empowerment and humanitarian assistance.</p>
-  <a class="btn" href="#donate">Support Our Work</a>
-  <a class="btn" style="background:#fff;margin-left:8px" href="#partnership">Partner With Us</a>
-</div>
-<div class="hero-card">
-  <h3>Our focus</h3>
-  <p>We believe that every child should have the opportunity to learn, participate, feel safe and build a hopeful future.</p>
-  <p><strong>Location:</strong> Maiduguri, Borno State, Nigeria</p>
-  <p><strong>Priority:</strong> Vulnerable children and children with disabilities</p>
-</div>
+<section class="hero" id="home">
+  <h2>Every Child Deserves Hope</h2>
+  <p>
+    We work to improve the lives of vulnerable children, people with disabilities,
+    women and communities through care, education, inclusion and empowerment.
+  </p>
+  <a href="#involved" class="button">Get Involved</a>
 </section>
 
 <section id="about">
-<div class="wrap">
-<span class="eyebrow">About CHIRALIYA</span>
-<h2>Building opportunity, dignity and inclusion.</h2>
-<p class="lead">CHIRALIYA was established to help children and other vulnerable people overcome barriers to education, participation and wellbeing. We work with communities and partners to turn practical support into lasting opportunities.</p>
-<div class="grid">
-<div class="card"><h3>Our Vision</h3><p>A society where every child, regardless of disability, vulnerability or background, has the opportunity to learn, grow, participate and thrive.</p></div>
-<div class="card"><h3>Our Mission</h3><p>To improve the educational, social and overall wellbeing of vulnerable children and persons with disabilities through inclusive programmes, empowerment, advocacy and community support.</p></div>
-<div class="card"><h3>Our Approach</h3><p>We listen to communities, identify practical needs, work with partners and aim to deliver transparent, accountable and measurable support.</p></div>
-</div>
-</div>
+  <h2>About Us</h2>
+  <p class="intro">
+    Chiraliya Children Care and Inclusion Foundation is a community-focused
+    organization committed to supporting vulnerable children, orphans, people
+    with disabilities and women. We believe that every person deserves dignity,
+    opportunity and a chance to build a better future.
+  </p>
 </section>
 
-<section class="soft">
-<div class="wrap">
-<span class="eyebrow">Who We Serve</span>
-<h2>Support that reaches people who need it most.</h2>
-<div class="stats">
-<div class="stat"><b>Children</b>Orphans and vulnerable children</div>
-<div class="stat"><b>Inclusion</b>Children and people with disabilities</div>
-<div class="stat"><b>Community</b>Women, families and vulnerable groups</div>
-</div>
-</div>
+<section class="mission" id="mission">
+  <div class="mission-content">
+    <h2>Our Mission</h2>
+    <p class="intro">
+      Our mission is to provide meaningful support, educational opportunities,
+      social inclusion and empowerment to vulnerable people while working with
+      communities to create lasting positive change.
+    </p>
+  </div>
 </section>
 
-<section id="programmes">
-<div class="wrap">
-<span class="eyebrow">Our Programmes</span>
-<h2>Practical programmes with a human focus.</h2>
-<div class="grid">
-<div class="card"><div class="icon">📚</div><h3>Education Support</h3><p>Educational materials, school-related support, learning opportunities and assistance designed to help vulnerable children remain engaged in education.</p></div>
-<div class="card"><div class="icon">♿</div><h3>Disability Inclusion</h3><p>Promoting participation, dignity, accessibility and opportunities for children and persons with disabilities.</p></div>
-<div class="card"><div class="icon">🤝</div><h3>Child Care & Wellbeing</h3><p>Community support addressing children's basic welfare, protection, psychosocial wellbeing and social inclusion.</p></div>
-<div class="card"><div class="icon">🌱</div><h3>Talent & Development</h3><p>Encouraging children's talents, confidence, life skills and positive development.</p></div>
-<div class="card"><div class="icon">🎒</div><h3>Back-to-School Support</h3><p>Targeted support such as school supplies and other practical assistance for children facing barriers to returning to school.</p></div>
-<div class="card"><div class="icon">📣</div><h3>Advocacy & Empowerment</h3><p>Community awareness, advocacy and partnerships that promote the rights, inclusion and opportunities of vulnerable people.</p></div>
-</div>
-</div>
-</section>
+<section id="work">
+  <h2>What We Do</h2>
 
-<section id="donate" class="cream">
-<div class="wrap">
-<span class="eyebrow">Donate</span>
-<h2>Your support can create an opportunity.</h2>
-<p class="lead">You can support CHIRALIYA through financial contributions, educational materials, assistive items, school supplies, professional services or other in-kind donations.</p>
-<div class="grid">
-<div class="card"><h3>Give Financially</h3><p>Support a specific programme or contribute to our general work.</p><p><b>Donation account:</b> To be added after final confirmation.</p></div>
-<div class="card"><h3>Give Materials</h3><p>School bags, books, stationery, learning materials and appropriate support items can make a direct difference.</p></div>
-<div class="card"><h3>Give Your Skills</h3><p>Professionals and volunteers can contribute expertise, training, mentorship and services.</p></div>
-</div>
-<p class="small">For transparency, CHIRALIYA will provide appropriate records and programme updates for supported activities.</p>
-</div>
-</section>
+  <div class="cards">
 
-<section id="partnership">
-<div class="wrap">
-<span class="eyebrow">Partnership</span>
-<h2>Let's work together.</h2>
-<p class="lead">We welcome partnerships with NGOs, companies, foundations, schools, community organisations, professionals, volunteers and individuals who share our commitment to children and inclusion.</p>
-<div class="grid">
-<div class="card"><h3>Project Partnerships</h3><p>Co-design and implement education, inclusion, child wellbeing and community projects.</p></div>
-<div class="card"><h3>Corporate Sponsorship</h3><p>Sponsor a programme, event, school support package or a defined group of beneficiaries.</p></div>
-<div class="card"><h3>Technical Support</h3><p>Offer training, mentoring, monitoring, communications, legal, financial or programme expertise.</p></div>
-</div>
-<div style="margin-top:30px"><span class="pill">NGOs</span><span class="pill">Foundations</span><span class="pill">Companies</span><span class="pill">Schools</span><span class="pill">Volunteers</span><span class="pill">Community Partners</span></div>
-</div>
-</section>
+    <div class="card">
+      <h3>Children & Orphans</h3>
+      <p>
+        Supporting vulnerable children and orphans with education, care,
+        basic needs and opportunities for a brighter future.
+      </p>
+    </div>
 
-<section id="contact" class="soft">
-<div class="wrap">
-<span class="eyebrow">Contact Us</span>
-<h2>We would love to hear from you.</h2>
-<div class="contact">
-<div class="contact-box">
-<h3>CHIRALIYA Children Care & Inclusion Foundation</h3>
-<p><b>Location:</b> Maiduguri, Borno State, Nigeria</p>
-<p><b>Email:</b> [Add official email]</p>
-<p><b>Phone:</b> [Add official phone number]</p>
-<p><b>Social media:</b> [Add official pages]</p>
-<p class="small">Please replace the bracketed contact details with your official information before publishing.</p>
-</div>
-<div class="contact-box">
-<form onsubmit="sendMessage(event)">
-<label>Name</label><input id="name" required>
-<label>Email</label><input id="email" type="email" required>
-<label>How can you help or partner?</label><textarea id="message" required></textarea>
-<button class="btn" type="submit">Send Enquiry</button>
-</form>
-</div>
-</div>
-</div>
-</section>
+    <div class="card">
+      <h3>Disability Inclusion</h3>
+      <p>
+        Promoting dignity, inclusion, education and equal opportunities
+        for people living with disabilities.
+      </p>
+    </div>
 
-<section class="cta">
-<h2>Help us give every child a chance.</h2>
-<p>Partner with CHIRALIYA to create practical opportunities for vulnerable children and inclusive communities.</p>
-<a class="btn" href="#donate">Donate</a><a class="btn" href="#partnership">Become a Partner</a>
-</section>
-</main>
+    <div class="card">
+      <h3>Women Empowerment</h3>
+      <p>
+        Supporting women and vulnerable families through empowerment,
+        skills development and community initiatives.
+      </p>
+    </div>
 
-<footer>
-<div class="footer-grid">
-<div><h3>CHIRALIYA</h3><p>Children Care & Inclusion Foundation</p><p class="small">Every Child Deserves a Chance.</p></div>
-<div><h3>Explore</h3><p><a href="#about">About Us</a></p><p><a href="#programmes">Programmes</a></p><p><a href="#donate">Donate</a></p></div>
-<div><h3>Connect</h3><p><a href="#partnership">Partnership</a></p><p><a href="#contact">Contact</a></p></div>
-</div>
-<p class="small">© <span id="year"></span> CHIRALIYA Children Care & Inclusion Foundation. All rights reserved.</p>
-</footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-function sendMessage(e){
- e.preventDefault();
- const subject=encodeURIComponent('CHIRALIYA website enquiry from '+document.getElementById('name').value);
- const body=encodeURIComponent(document.getElementById('message').value+'\\n\\nReply to: '+document.getElementById('email').value);
- window.location.href='mailto:[ADD-OFFICIAL-EMAIL]?subject='+subject+'&body='+body;
-}
-</script>
-</body>
-</html>
+    <div class="card">
+      <h3>Community
