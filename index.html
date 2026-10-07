@@ -3,162 +3,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chiraliya Children Care and Inclusion Foundation</title>
+
+<title>Chiraliya Children Care & Inclusion Foundation</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f8faf9;
+body{
+  font-family:Arial, sans-serif;
+  color:#263238;
+  background:#ffffff;
+  line-height:1.7;
 }
 
-header {
-  background: #0b6b4f;
-  color: white;
-  padding: 20px;
-  text-align: center;
+header{
+  background:#075c45;
+  color:white;
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-header h1 {
-  font-size: 26px;
-  margin-bottom: 8px;
+.logo{
+  font-size:20px;
+  font-weight:bold;
 }
 
-header p {
-  font-size: 15px;
+.logo span{
+  color:#f5c542;
 }
 
-nav {
-  background: #07543e;
-  padding: 12px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 8px;
+  font-size:14px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 8px;
-  font-size: 14px;
+.hero{
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+  padding:70px 20px;
+  color:white;
+  background:
+  linear-gradient(rgba(0,75,55,.75),rgba(0,75,55,.75)),
+  url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
 }
 
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-              url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+.hero-content{
+  max-width:850px;
 }
 
-.hero h2 {
-  font-size: 38px;
-  margin-bottom: 15px;
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
 }
 
-.hero p {
-  max-width: 650px;
-  margin: auto;
-  font-size: 18px;
+.hero h1 span{
+  color:#f5c542;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 25px;
-  background: #f4b942;
-  color: #222;
-  padding: 13px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+.hero p{
+  font-size:19px;
+  margin-bottom:28px;
 }
 
-section {
-  padding: 55px 20px;
-  max-width: 1100px;
-  margin: auto;
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  margin:6px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-section h2 {
-  text-align: center;
-  color: #0b6b4f;
-  margin-bottom: 20px;
-  font-size: 30px;
+.btn-gold{
+  background:#f5c542;
+  color:#173b2f;
 }
 
-.intro {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+.btn-white{
+  background:white;
+  color:#075c45;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+section{
+  padding:70px 7%;
 }
 
-.card {
-  background: white;
-  padding: 28px 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+.section-title{
+  text-align:center;
+  color:#075c45;
+  font-size:34px;
+  margin-bottom:15px;
 }
 
-.card h3 {
-  color: #0b6b4f;
-  margin-bottom: 10px;
+.section-text{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
 }
 
-.mission {
-  background: #e9f5f0;
-  max-width: none;
+.about{
+  background:#f5faf8;
 }
 
-.mission-content {
-  max-width: 1000px;
-  margin: auto;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
 }
 
-.contact {
-  background: #0b6b4f;
-  color: white;
-  max-width: none;
-  text-align: center;
+.card{
+  background:white;
+  padding:30px 22px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
-.contact h2 {
-  color: white;
+.card:hover{
+  transform:translateY(-5px);
 }
 
-footer {
-  background: #053b2d;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+.icon{
+  font-size:42px;
+  margin-bottom:15px;
 }
 
-@media (max-width: 600px) {
-  .hero h2 {
-    font-size: 30px;
+.card h3{
+  color:#075c45;
+  margin-bottom:10px;
+}
+
+.mission{
+  background:#075c45;
+  color:white;
+}
+
+.mission .section-title{
+  color:#f5c542;
+}
+
+.vision{
+  background:#fff9e6;
+}
+
+.stats{
+  background:#f5faf8;
+}
+
+.stat{
+  text-align:center;
+}
+
+.stat strong{
+  display:block;
+  font-size:38px;
+  color:#075c45;
+}
+
+.involved{
+  text-align:center;
+}
+
+.contact{
+  background:#075c45;
+  color:white;
+  text-align:center;
+}
+
+.contact .section-title{
+  color:#f5c542;
+}
+
+.contact-box{
+  max-width:700px;
+  margin:30px auto 0;
+}
+
+footer{
+  background:#04382b;
+  color:white;
+  text-align:center;
+  padding:28px 15px;
+  font-size:14px;
+}
+
+@media(max-width:700px){
+  header{
+    justify-content:center;
+    text-align:center;
   }
 
-  nav a {
-    display: inline-block;
-    margin: 5px;
+  nav{
+    margin-top:12px;
+  }
+
+  nav a{
+    display:inline-block;
+    margin:5px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:55px 5%;
   }
 }
 </style>
@@ -167,78 +237,255 @@ footer {
 <body>
 
 <header>
-  <h1>Chiraliya Children Care and Inclusion Foundation</h1>
-  <p>Creating Hope • Supporting Children • Building Inclusive Communities</p>
+  <div class="logo">
+    CHIRALIYA <span>Foundation</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#mission">Mission</a>
+    <a href="#involved">Get Involved</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About Us</a>
-  <a href="#mission">Mission</a>
-  <a href="#work">What We Do</a>
-  <a href="#vision">Vision</a>
-  <a href="#involved">Get Involved</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero" id="home">
-  <h2>Every Child Deserves Hope</h2>
-  <p>
-    We work to improve the lives of vulnerable children, people with disabilities,
-    women and communities through care, education, inclusion and empowerment.
-  </p>
-  <a href="#involved" class="button">Get Involved</a>
-</section>
+  <div class="hero-content">
 
-<section id="about">
-  <h2>About Us</h2>
-  <p class="intro">
-    Chiraliya Children Care and Inclusion Foundation is a community-focused
-    organization committed to supporting vulnerable children, orphans, people
-    with disabilities and women. We believe that every person deserves dignity,
-    opportunity and a chance to build a better future.
-  </p>
-</section>
+    <h1>
+      Creating <span>Hope</span>.<br>
+      Building Better Futures.
+    </h1>
 
-<section class="mission" id="mission">
-  <div class="mission-content">
-    <h2>Our Mission</h2>
-    <p class="intro">
-      Our mission is to provide meaningful support, educational opportunities,
-      social inclusion and empowerment to vulnerable people while working with
-      communities to create lasting positive change.
+    <p>
+      Supporting vulnerable children, people with disabilities,
+      women and communities through care, education,
+      inclusion and empowerment.
     </p>
+
+    <a href="#involved" class="btn btn-gold">
+      Get Involved
+    </a>
+
+    <a href="#about" class="btn btn-white">
+      Learn More
+    </a>
+
   </div>
 </section>
 
-<section id="work">
-  <h2>What We Do</h2>
+<section class="about" id="about">
+
+  <h2 class="section-title">About Chiraliya</h2>
+
+  <p class="section-text">
+    Chiraliya Children Care & Inclusion Foundation is a
+    community-focused organization committed to creating
+    opportunities for vulnerable people and building
+    stronger, more inclusive communities.
+  </p>
 
   <div class="cards">
 
     <div class="card">
+      <div class="icon">❤️</div>
+      <h3>Care</h3>
+      <p>
+        We provide compassionate support to vulnerable
+        children, families and communities.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📚</div>
+      <h3>Education</h3>
+      <p>
+        We believe education can open doors and create
+        brighter futures.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Inclusion</h3>
+      <p>
+        We promote dignity, participation and equal
+        opportunities for everyone.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="programs">
+
+  <h2 class="section-title">What We Do</h2>
+
+  <p class="section-text">
+    Our work focuses on practical support and opportunities
+    for people who need them most.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">👧🏽</div>
       <h3>Children & Orphans</h3>
       <p>
-        Supporting vulnerable children and orphans with education, care,
-        basic needs and opportunities for a brighter future.
+        Supporting vulnerable children and orphans with
+        education, care and essential opportunities.
       </p>
     </div>
 
     <div class="card">
+      <div class="icon">♿</div>
       <h3>Disability Inclusion</h3>
       <p>
-        Promoting dignity, inclusion, education and equal opportunities
-        for people living with disabilities.
+        Promoting inclusion, dignity, education and
+        opportunities for people with disabilities.
       </p>
     </div>
 
     <div class="card">
+      <div class="icon">👩🏽</div>
       <h3>Women Empowerment</h3>
       <p>
-        Supporting women and vulnerable families through empowerment,
+        Supporting women through empowerment,
         skills development and community initiatives.
       </p>
     </div>
 
     <div class="card">
-      <h3>Community
+      <div class="icon">🌍</div>
+      <h3>Community Support</h3>
+      <p>
+        Working with communities to address social
+        challenges and create lasting change.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="mission" id="mission">
+
+  <h2 class="section-title">Our Mission</h2>
+
+  <p class="section-text">
+    To improve the lives of vulnerable children, people
+    with disabilities, women and communities by providing
+    support, education, inclusion and empowerment while
+    promoting dignity and equal opportunities.
+  </p>
+
+</section>
+
+<section class="vision">
+
+  <h2 class="section-title">Our Vision</h2>
+
+  <p class="section-text">
+    A society where every child, woman and person with
+    a disability can live with dignity, access opportunities
+    and participate fully in their community.
+  </p>
+
+</section>
+
+<section class="stats">
+
+  <div class="cards">
+
+    <div class="stat">
+      <strong>01</strong>
+      <p>Hope for every child</p>
+    </div>
+
+    <div class="stat">
+      <strong>02</strong>
+      <p>Inclusion for all</p>
+    </div>
+
+    <div class="stat">
+      <strong>03</strong>
+      <p>Stronger communities</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="involved" id="involved">
+
+  <h2 class="section-title">Get Involved</h2>
+
+  <p class="section-text">
+    You can help us make a difference.
+    Every contribution, partnership and act of service matters.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🙋🏽</div>
+      <h3>Volunteer</h3>
+      <p>
+        Give your time and skills to support our programs.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Partner</h3>
+      <p>
+        Work with us to create meaningful community impact.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💛</div>
+      <h3>Donate</h3>
+      <p>
+        Your support can help provide education,
+        care and opportunities.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2 class="section-title">Contact Us</h2>
+
+  <div class="contact-box">
+
+    <p><strong>Chiraliya Children Care & Inclusion Foundation</strong></p>
+
+    <p>Maiduguri, Borno State, Nigeria</p>
+
+    <p style="margin-top:15px;">
+      We welcome volunteers, partners, donors and supporters.
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 Chiraliya Children Care & Inclusion Foundation
+  </p>
+
+  <p>
+    Creating Hope • Supporting Lives • Building Inclusion
+  </p>
+
+</footer>
+
+</body>
+</html>
